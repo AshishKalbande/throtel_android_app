@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_border"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_toStartOf="@+id/img_delete"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+                android:textColor="@color/light_Black"
+                android:textSize="@dimen/_16ssp"
+                android:textStyle="bold"
+                tools:text="" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/trash" />
+
+            <LinearLayout
+                android:id="@+id/layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_item_name"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_net_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/orange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_sell_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@id/tv_price"
+                    android:gravity="center"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/grey"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_item_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_below="@id/layout_price"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:padding="6dp"
+                android:textColor="@color/light_Black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_sizes"
+                android:layout_width="80dp"
+                android:layout_height="38dp"
+                android:layout_below="@id/layout_price"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="80"
+                android:textColor="@color/light_Black"
+                android:textStyle="bold" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/colors"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/layout_price"
+
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp">
+
+            </com.google.android.material.card.MaterialCardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_price"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <!--<TextView
+                    android:layout_width="80dp"
+
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="ADD"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/square_ouline_orange"
+                    android:textColor="@color/orange"
+                    ></TextView>-->
+
+                <me.himanshusoni.quantityview.QuantityView
+                    android:id="@+id/quantityView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:background="@color/orange"
+                    app:qv_addButtonBackground="@drawable/ic_add"
+                    app:qv_addButtonTextColor="@color/white"
+                    app:qv_quantityBackground="@drawable/square_ouline_orange"
+                    app:qv_quantityDialog="false"
+                    app:qv_quantityPadding="15dp"
+                    app:qv_quantityTextColor="@color/black"
+                    app:qv_removeButtonBackground="@drawable/ic_remove"
+                    app:qv_removeButtonTextColor="@color/white" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

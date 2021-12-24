@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar1"
+        android:layout_centerHorizontal="true"
+        android:clipToPadding="false"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/_30sdp"
+        android:paddingVertical="@dimen/_30sdp"
+        android:weightSum="3">
+
+        <RelativeLayout
+            android:id="@+id/relContact"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivContact"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_call"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/tvContactLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivContact"
+                android:text="@string/call_us_on"
+                android:textAlignment="viewStart"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvContactLabel"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivContact"
+                android:autoLink="phone"
+                android:background="@drawable/layout_border_green"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_5sdp"
+                android:text="@string/_9028482676"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tcContactTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvNumber"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toEndOf="@+id/ivContact"
+                android:text="@string/_7_00am_to_10_00am_all_days"
+                android:textAlignment="viewStart"
+                android:textColor="@color/dark_grey" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:id="@+id/ivEmail"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_email"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/tvEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivEmail"
+                android:text="@string/email_colon"
+                android:textAlignment="viewStart"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvEmailLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_toEndOf="@+id/ivEmail"
+                android:autoLink="email"
+                android:text="@string/email_support"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_weight="1.5">
+
+            <ImageView
+                android:id="@+id/ivAddress"
+                android:layout_width="@dimen/_12sdp"
+                android:layout_height="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:src="@drawable/ic_location_pin"
+                app:tint="@color/green" />
+
+            <TextView
+                android:id="@+id/tvAddressLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/ivAddress"
+                android:text="@string/address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/dark_grey" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvAddressLabel"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:maxWidth="@dimen/_120sdp"
+                android:layout_toEndOf="@+id/ivAddress"
+                android:text="@string/support_address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@+id/tvAddress"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_toEndOf="@+id/ivAddress"
+                android:src="@drawable/ic_support" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

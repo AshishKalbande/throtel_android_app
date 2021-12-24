@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "993880148095",
+    "firebase_url": "https://grocery-fac06.firebaseio.com",
+    "project_id": "grocery-fac06",
+    "storage_bucket": "grocery-fac06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993880148095:android:e177760202d168ca65974a",
+        "android_client_info": {
+          "package_name": "com.throtel.grocery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993880148095-0r8voq4ubpa3lsgni007oi1gk9dl6ul5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.throtel.grocery",
+            "certificate_hash": "05660ee9e1cac3b2cf515014ee267e9bcfb5b8f7"
+          }
+        },
+        {
+          "client_id": "993880148095-pp26n8o959op3hn4mqhs7tkmm09l2r1d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.throtel.grocery",
+            "certificate_hash": "cd4348c909d3eea8569888a4757908ce7875c39c"
+          }
+        },
+        {
+          "client_id": "993880148095-v46dj30pv3tqin3tv525ru51gnf0rdc4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.throtel.grocery",
+            "certificate_hash": "359a2670705740daae0dbe761fde9d40d8a7f9fa"
+          }
+        },
+        {
+          "client_id": "993880148095-2nhm62bpuehk37stn7o3rif01bduha4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYKWRtbml5y2JZE-znXSOPxzwqpV0xGuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993880148095-2nhm62bpuehk37stn7o3rif01bduha4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

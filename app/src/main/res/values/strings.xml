@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Throtel</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="error_general">Something went wrong!!</string>
+    <string name="error_network">Please check your internet connection!!</string>
+
+    <!-- bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_orders">Orders</string>
+    <string name="nav_category">Category</string>
+    <string name="nav_wallet">Wallet</string>
+    <string name="nav_subscribe">Subscribe</string>
+
+    <!-- drawer Navigation -->
+    <string name="nav_my_account">My Account</string>
+    <string name="nav_my_category">Shop By Category</string>
+    <string name="nav_my_subscription">My Subscription</string>
+    <string name="nav_my_return">My Return Orders</string>
+    <string name="nav_cusomized_subscription">Monthly Customize Pack</string>
+    <string name="nav_daily_subscription">Daily Subscriptions</string>
+    <string name="nav_my_orders">My Orders</string>
+    <string name="nav_b2b_purchase">B2B Purchase</string>
+    <string name="nav_refer_earn">Refer and Earn</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_policy">Policy</string>
+    <string name="nav_need_help">Need Help?</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_logout">Logout</string>
+
+    <string name="search_hint">Search Item Here</string>
+    <string name="resend_otp">Resend</string>
+
+    <string name="line"> <strike> ₹ 50.00 </strike> </string>
+
+
+    <string name="web_client_id">993880148095-2nhm62bpuehk37stn7o3rif01bduha4t.apps.googleusercontent.com</string>
+
+
+    <string name="facebook_app_id">423727265704253</string>
+    <string name="fb_login_protocol_scheme">fb423727265704253</string>
+    <string name="daily_needs">Daily Needs</string>
+    <string name="call_us_on">Call Us On:</string>
+    <string name="_7_00am_to_10_00am_all_days">7:00am To 10:00am, All days</string>
+    <string name="_9028482676">9689838549</string>
+    <string name="email_support">support@throtelgrocery.com</string>
+    <string name="email_colon">Email:</string>
+    <string name="address">Address:</string>
+    <string name="support_address">kaspate wasti, <br></br> Pune 411003</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="return_order">Return</string>
+    <string name="help_desk">Help Desk</string>
+    <string name="search">Search</string>
+    <string name="search_keyword">search keyword</string>
+    <string name="cancel_search">cancel</string>
+    <string name="update">Update</string>
+    <string name="update_msg">There is new version of this app available</string>
+    <string name="update_title">Update</string>
+
+
+</resources>

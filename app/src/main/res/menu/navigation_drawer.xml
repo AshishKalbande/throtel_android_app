@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_my_category"
+        android:title=""
+        app:actionLayout="@layout/category_menu_item"
+        app:theme="@style/NavigationDrawerStyles"
+
+        />
+    <item
+        android:id="@+id/nav_my_account"
+        android:icon="@drawable/ic_menu_account"
+        android:title="@string/nav_my_account" />
+    <item
+        android:id="@+id/nav_my_orders"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/nav_my_orders" />
+
+<!--    <item-->
+<!--        android:id="@+id/nav_my_subscription"-->
+<!--        android:icon="@drawable/ic_subscription"-->
+<!--        android:title="@string/nav_my_subscription" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_daily_subscribe"-->
+<!--        android:icon="@drawable/ic_subscription"-->
+<!--        android:title="@string/nav_daily_subscription" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_customized_subscription"-->
+<!--        android:icon="@drawable/ic_subscription"-->
+<!--        android:title="@string/nav_cusomized_subscription" />-->
+<!--    <item-->
+<!--        android:id="@+id/nav_b2b_purchase"-->
+<!--        android:icon="@drawable/ic_btb"-->
+<!--        android:title="@string/nav_b2b_purchase" />-->
+
+    <item
+        android:id="@+id/nav_my_return"
+        android:icon="@drawable/ic_orders"
+        android:title="@string/nav_my_return" />
+
+    <item
+        android:id="@+id/nav_about_us"
+        android:icon="@drawable/ic_aboutus"
+        android:title="@string/nav_about_us" />
+    <item
+        android:id="@+id/nav_policy"
+        android:icon="@drawable/ic_policyy"
+        android:title="@string/nav_policy" />
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/ic_sharee"
+        android:title="@string/nav_share" />
+    <item
+        android:id="@+id/nav_need_help"
+        android:icon="@drawable/ic_need_help"
+        android:title="@string/nav_need_help" />
+    <item
+        android:id="@+id/nav_refer_and_earn"
+        android:icon="@drawable/ic_referandearn"
+        android:title="@string/nav_refer_earn"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_log_out"
+        android:title="@string/nav_logout" />
+</menu>
+

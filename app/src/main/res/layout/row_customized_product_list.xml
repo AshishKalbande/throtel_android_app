@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    card_view:cardBackgroundColor="#fff"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardElevation="5dp"
+    card_view:cardUseCompatPadding="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_fruits" />
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/img"
+            android:layout_width="wrap_content"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/light_Black"
+                android:text="Fruits " />
+
+            <LinearLayout
+                android:id="@+id/layout_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/tv_item_name">
+
+                <TextView
+                    android:id="@+id/tv_net_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="1dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/orange"
+                    android:text="₹ 45.00"
+                    />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/tv_sell_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_toRightOf="@id/tv_price"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="1dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/grey"
+                    android:text="@string/line"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/grey" />
+                <TextView
+                    android:id="@+id/tv_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+
+                    android:layout_marginTop="1dp"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:text="Save:₹ 15"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+
+                android:layout_below="@id/layout_price">
+                <TextView
+                    android:id="@+id/tv_item_weight"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:text="1 Kg"
+
+                    android:padding="6dp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@drawable/square_ouline_orange"
+                    android:textColor="@color/orange"
+                    ></TextView>
+
+                <!-- <TextView
+                     android:layout_width="wrap_content"
+
+                     android:layout_height="wrap_content"
+                     android:padding="5dp"
+                     android:layout_marginLeft="5dp"
+                     android:text="ADD"
+                     android:textStyle="bold"
+                     android:layout_gravity="center_vertical"
+                     android:gravity="center_vertical"
+                     android:drawableRight="@drawable/ic_add_box_24"
+                     android:drawablePadding="10dp"
+                     android:background="@drawable/square_ouline_orange"
+                     android:textColor="@color/orange"
+                     ></TextView>-->
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/trash"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

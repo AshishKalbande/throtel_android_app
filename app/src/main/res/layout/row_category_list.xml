@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:padding="4dp"
+
+    >
+    <!--
+    grid items for RecyclerView
+    -->
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/square_ouline_orange"
+        android:elevation="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/no_preview" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_img"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="ABCD"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+</RelativeLayout>
