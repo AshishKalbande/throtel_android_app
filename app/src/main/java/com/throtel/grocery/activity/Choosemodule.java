@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 
 import com.throtel.grocery.R;
 
+import A_Test.Activity.LoginTestActivity;
 import books.activity.LoginbookActivity;
 
 public class Choosemodule extends BaseActivity {
@@ -36,9 +37,14 @@ LinearLayout books,grocery,test;
             public void onClick(View v) {
                 Intent intent = new Intent(Choosemodule.this, LoginbookActivity.class);
                 startActivity(intent);
+            }
+        });
 
-
-
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Choosemodule.this, LoginTestActivity.class);
+                startActivity(intent);
             }
         });
     }

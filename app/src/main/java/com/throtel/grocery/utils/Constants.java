@@ -7,10 +7,12 @@ public class Constants {
 
     public final static String IS_LOGGED_IN = "isLoggedIn";
     public final static String IS_BookLOGGED_IN = "isBookLoggedIn";
+    public final static String IS_TestLOGGED_IN = "isTestLoggedIn";
     public final static String IS_MOBILE_VERIFIED = "isMobileVerified";
     public final static String USER_ROLE = "userRole";
     public final static String SIGN_IN_DATA = "SignInData";
     public final static String BOOKSIGN_IN_DATA = "BookSignInData";
+    public final static String TESTSIGN_IN_DATA = "TestSignInData";
     public final static String MOBILE_NO = "mobileNumber";
     public final static String CUSTOMER_ID = "customerid";
     public static final String DAILYQTY = "dailyquantity";

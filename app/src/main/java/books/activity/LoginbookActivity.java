@@ -104,8 +104,10 @@ public class LoginbookActivity extends BaseActivity implements GoogleApiClient.O
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_loginbook);
         initViews();
+
+
 
         //======= Google Login =======
 
@@ -901,4 +903,5 @@ public class LoginbookActivity extends BaseActivity implements GoogleApiClient.O
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
     }
+
 }

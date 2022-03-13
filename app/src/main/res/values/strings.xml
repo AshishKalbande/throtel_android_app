@@ -7,6 +7,7 @@
     <string name="error_general">Something went wrong!!</string>
     <string name="error_network">Please check your internet connection!!</string>
 
+
     <!-- bottom navigation -->
     <string name="nav_home">Home</string>
     <string name="nav_orders">Orders</string>
@@ -58,6 +59,21 @@
     <string name="update">Update</string>
     <string name="update_msg">There is new version of this app available</string>
     <string name="update_title">Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_package">My Package</string>
+    <string name="my_test">My Test</string>
+    <string name="profile">Profile</string>
+    <string name="app_updates">App Updates</string>
+    <string name="my_pofile">My Pofile</string>
+    <string name="buy_package">Buy Package</string>
+    <string name="self_test">Self Test</string>
+    <string name="main_test">Main Test</string>
+    <string name="Profile">test_profile</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_from_gallery">Choose From Gallery</string>
+    <string name="cancel">Cancel</string>
+    <string name="select_option">Select Option</string>
 
 
 </resources>

@@ -8,7 +8,8 @@ import android.text.TextUtils;
 import com.throtel.grocery.models.UserDetail;
 
 import com.google.gson.Gson;
-
+import A_Test.model.UpdateUserLists;
+import A_Test.model.UserTestDetails;
 import books.models.UserBookDetail;
 
 public class LocalData {
@@ -41,6 +42,25 @@ public class LocalData {
         boolean isLoggedIn = preferences.getBoolean(Constants.IS_BookLOGGED_IN, false);
         return isLoggedIn;
     }
+    // edited test
+    public boolean isTestLoggedIn() {
+        boolean isLoggedIn = preferences.getBoolean(Constants.IS_TestLOGGED_IN, false);
+        return isLoggedIn;
+    }
+    public void setTestLoggedIn(boolean isLoggedIn) {
+        editor.putBoolean(Constants.IS_TestLOGGED_IN, isLoggedIn);
+        editor.commit();
+    }
+    public void setTestSignIn(UserTestDetails userDetails) {
+        editor.putString(Constants.TESTSIGN_IN_DATA, gson.toJson(userDetails));
+        editor.commit();
+    }
+    public void setTestUpdate(UpdateUserLists updateUserLists) {
+        editor.putString(Constants.TESTSIGN_IN_DATA, gson.toJson(updateUserLists));
+        editor.commit();
+    }
+    //edited test end
+
     public void setLoggedIn(boolean isLoggedIn) {
         editor.putBoolean(Constants.IS_LOGGED_IN, isLoggedIn);
         editor.commit();
@@ -49,6 +69,7 @@ public class LocalData {
         editor.putBoolean(Constants.IS_BookLOGGED_IN, isLoggedIn);
         editor.commit();
     }
+    //edited
 
     public UserDetail getSignIn() {
         String signInResponse = preferences.getString(Constants.SIGN_IN_DATA, "");
@@ -66,6 +87,15 @@ public class LocalData {
         } else
             return null;
     }
+    public UserTestDetails getTestSignIn(){
+        String signInResponse = preferences.getString(Constants.TESTSIGN_IN_DATA, "");
+        if (!TextUtils.isEmpty(signInResponse)) {
+            UserTestDetails signIn = gson.fromJson(signInResponse, UserTestDetails.class);
+            return signIn;
+        } else
+            return null;
+    }
+
     public void setSignIn(UserDetail userDetail) {
         editor.putString(Constants.SIGN_IN_DATA, gson.toJson(userDetail));
         editor.commit();
@@ -123,5 +153,6 @@ public class LocalData {
         editor.clear();
         editor.commit();
     }
+
 
 }

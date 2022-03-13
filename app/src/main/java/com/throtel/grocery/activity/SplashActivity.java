@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 
+import A_Test.Activity.HomeTestActivity;
 import books.activity.HomeBookActivity;
 import books.fcm.Config;
 import books.models.UserBookDetail;
@@ -55,6 +56,11 @@ if(localData.isLoggedIn()){
 else if(localData.isBookLoggedIn()){
     intent = new Intent(SplashActivity.this, HomeBookActivity.class);
                 }
+// test
+else if(localData.isTestLoggedIn()){
+    intent = new Intent(SplashActivity.this, HomeTestActivity.class);
+}
+//
 else{
     intent = new Intent(SplashActivity.this, Choosemodule.class);
 }

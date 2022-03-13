@@ -47,6 +47,20 @@ public interface Api {
             @Field("districtId") String districtId,
             @Field("tahsilId") String tahsilId
     );
+    @FormUrlEncoded
+    @POST("signup")
+    Call<DataResponse> getSignUpBook(
+            @Field("name") String name,
+            @Field("email") String email,
+            @Field("phone") String phone,
+            @Field("schoolName") String schoolName,
+            @Field("className") String className,
+            @Field("password") String password,
+            @Field("password2") String password2,
+            @Field("stateId") String stateId,
+            @Field("districtId") String districtId,
+            @Field("tahsilId") String tahsilId
+    );
     @GET("state-list-view")
     Call<StateListDataResponse> getStateList();
 
@@ -58,11 +72,18 @@ public interface Api {
     );
 
 
+//    @FormUrlEncoded
+//    @POST("district-wise-tahsil-list-view")
+//    Call<PincodeListDataResponse> getTahsilList(
+//            @Field("districtId") String districtId
+//    );
+
     @FormUrlEncoded
     @POST("district-wise-tahsil-list-view")
     Call<PincodeListDataResponse> getTahsilList(
             @Field("districtId") String districtId
     );
+
     @FormUrlEncoded
     @POST("verify-otp")
     Call<DataResponse> verifyOTP(
@@ -316,6 +337,7 @@ public interface Api {
     );
     @POST("login/")
     Call<LoginDataResponse> login(@Query("phone") String phone, @Query("password") String password, @Query("token") String token);
+
 
     @FormUrlEncoded
     @POST("get-book-customer-notification-list")

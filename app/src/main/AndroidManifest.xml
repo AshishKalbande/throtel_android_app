@@ -22,10 +22,36 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="books.activity.LoginbookActivity"
+            android:name="A_Test.Activity.UpdateProfileTestActivity"
             android:exported="false" />
-
-
+        <activity
+            android:name="A_Test.Activity.MyProfileInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name="A_Test.Activity.ForgotPasswordTestActivity"
+            android:exported="false" />
+        <activity
+            android:name="A_Test.Activity.HomeTestActivity"
+            android:exported="false" />
+        <activity
+            android:name="A_Test.Activity.VerifyOtpTestActivity"
+            android:exported="false" />
+        <activity
+            android:name="A_Test.Activity.LoginTestActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="A_Test.Activity.SignUpTestActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="books.activity.SignUpBookActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="books.activity.LoginbookActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
         <activity
             android:name="books.activity.HomeBookActivity"
             android:configChanges="orientation"
@@ -34,7 +60,6 @@
             android:name="books.activity.SignUpActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-
         <activity
             android:name="books.activity.OTPVerifyActivity"
             android:configChanges="orientation"
@@ -163,11 +188,6 @@
             android:name="books.activity.OffersProductListActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-
-
-
-
-
         <activity
             android:name=".activity.Choosemodule"
             android:exported="false" />

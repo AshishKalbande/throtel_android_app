@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="A_Test.Activity.UpdateProfileTestActivity">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        app:startIconDrawable="@drawable/ic_name"
+        app:startIconTint="@color/sky_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        app:startIconDrawable="@drawable/ic_email"
+        app:startIconTint="@color/sky_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Uemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        app:startIconDrawable="@drawable/ic_phone"
+        app:startIconTint="@color/sky_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Uphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        app:startIconDrawable="@drawable/ic_school"
+        app:startIconTint="@color/sky_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Uschool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        app:startIconDrawable="@drawable/ic_class"
+        app:startIconTint="@color/sky_blue">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_Uclass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable="@drawable/color_cursor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spn_state"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:paddingStart="20dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_height="47dp"/>
+
+<!--        -->
+        <Spinner
+            android:visibility="gone"
+            android:paddingStart="20dp"
+            android:id="@+id/spn_city"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_height="47dp"/>
+
+        <Spinner
+            android:visibility="gone"
+            android:paddingStart="20dp"
+            android:id="@+id/spn_pincode"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner_bg"
+            android:layout_height="47dp"/>
+
+        <Button
+            android:id="@+id/btnTestUpdateChange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/c5"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/btn_rounded"
+            android:text="Update Changes"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold" />
+<!--    </LinearLayout>-->
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

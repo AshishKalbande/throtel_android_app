@@ -24,6 +24,7 @@ public class RetrofitClient {
    // public static final String BASE_CATEGORY_IMAGE_URL = BASE_IMAGE_URL + "uploads/sub-category/";
     public static final String BASE_BANNER_IMAGE_URL = BASE_IMAGE_URL + "uploads/book-banner/";
 
+
     public static final String BASE_SUBSCRIPTION_PACK_IMAGE_URL = BASE_IMAGE_URL + "uploads/subscription-pack/";
 
     private static Retrofit retrofit;
